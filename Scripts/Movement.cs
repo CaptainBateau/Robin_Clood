@@ -9,14 +9,12 @@ public class Movement : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetAxis("Horizontal") != 0)
-		{
+		
 			transform.Translate(Input.GetAxis("Horizontal") * Vector3.right * _horizontalSpeed * Time.deltaTime);
-		}
+		
 
-		if (Input.GetAxis("Vertical") != 0)
-		{
+		
 			transform.Translate(Input.GetAxis("Vertical") * Vector3.up * _verticalSpeed * Time.deltaTime);
-		}
+		
 	}
 }
